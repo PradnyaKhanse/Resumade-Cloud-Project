@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Happy Yellow & Purple Color Palette */
+  --color-yellow-light: #FFE863;
+  --color-yellow-bright: #FFD93D;
+  --color-yellow-golden: #F5BD1F;
+  --color-purple-vibrant: #8736AA;
+  --color-purple-deep: #5D2689;
+  --color-purple-dark: #47297B;
+  
+  /* Base Colors */
+  --background: #F8FAFC;
+  --foreground: #5D2689;
+  --card: #FFFFFF;
+  --card-foreground: #5D2689;
+  --popover: #FFFFFF;
+  --popover-foreground: #5D2689;
+  
+  /* Primary - Vibrant Purple */
+  --primary: #8736AA;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #5D2689;
+  
+  /* Secondary - Golden Yellow */
+  --secondary: #F5BD1F;
+  --secondary-foreground: #FFFFFF;
+  --secondary-hover: #FFD93D;
+  
+  /* Muted */
+  --muted: #FFE863;
+  --muted-foreground: #5D2689;
+  
+  /* Accent - Bright Yellow */
+  --accent: #FFD93D;
+  --accent-foreground: #47297B;
+  
+  /* Destructive */
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  
+  /* Border & Input */
+  --border: #E2E8F0;
+  --input: transparent;
+  --input-background: #FFFFFF;
+  --switch-background: #CBD5E1;
+  
+  /* Font Weights */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Ring */
+  --ring: #8736AA;
+  
+  /* Charts */
+  --chart-1: #8736AA;
+  --chart-2: #FFD93D;
+  --chart-3: #5D2689;
+  --chart-4: #F5BD1F;
+  --chart-5: #FFE863;
+  
+  /* Radius */
+  --radius: 0.75rem;
+  
+  /* Navbar */
+  --navbar-background: #47297B;
+  --navbar-foreground: #FFFFFF;
+  
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #5D2689;
+  --sidebar-primary: #8736AA;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #FFE863;
+  --sidebar-accent-foreground: #5D2689;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #8736AA;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  /* Base Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  /* Primary Colors */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  
+  /* Secondary Colors */
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-hover: var(--secondary-hover);
+  
+  /* Muted */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  /* Accent */
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  /* Destructive */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  /* Border & Input */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  
+  /* Ring */
+  --color-ring: var(--ring);
+  
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Navbar */
+  --color-navbar-background: var(--navbar-background);
+  --color-navbar-foreground: var(--navbar-foreground);
+  
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Happy Yellow & Purple Palette */
+  --color-yellow-light: var(--color-yellow-light);
+  --color-yellow-bright: var(--color-yellow-bright);
+  --color-yellow-golden: var(--color-yellow-golden);
+  --color-purple-vibrant: var(--color-purple-vibrant);
+  --color-purple-deep: var(--color-purple-deep);
+  --color-purple-dark: var(--color-purple-dark);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* Smooth page transitions */
+  .page-transition {
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  /* Gradient Utilities */
+  .gradient-yellow-purple {
+    background: linear-gradient(to right, #FFD93D, #8736AA);
+  }
+
+  .gradient-golden-deep {
+    background: linear-gradient(45deg, #F5BD1F, #5D2689);
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.5;
+      color: #47297B;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+      color: #5D2689;
+    }
+
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+      color: #5D2689;
+    }
+
+    h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+      color: #5D2689;
+    }
+
+    p {
+      font-family: 'Inter', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+      color: rgba(93, 38, 137, 0.8);
+    }
+
+    label {
+      font-family: 'Inter', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+      color: #5D2689;
+    }
+
+    button {
+      font-family: 'Poppins', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.5;
+    }
+
+    input {
+      font-family: 'Inter', sans-serif;
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+      color: #5D2689;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
