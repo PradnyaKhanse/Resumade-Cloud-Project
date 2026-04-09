@@ -72,7 +72,7 @@ S3 (stores resume file)
 
 ---
 
-## 📌 Conclusion
+## 📌Conclusion
 
 This project successfully demonstrates the integration of cloud services into a web application. It uses a serverless architecture which reduces infrastructure management and improves scalability.
 
