@@ -9,7 +9,7 @@
 
   Run `npm run dev` to start the development server.
   
-  # 🌐 ResuMade - Cloud-Based Resume Builder
+  # 🌐 ResuMade : Cloud-Based Resume Builder
 
 ## 📌 Project Overview
 
